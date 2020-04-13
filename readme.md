@@ -37,5 +37,26 @@ AutoRest needs the below config to pick this up as a plug-in - see https://githu
 ``` yaml 
 enable-multi-api: true
 require: "$(this-folder)/extensions/adl/readme.md"
+
+pipeline:
+  adl:
+    input: openapi-document/multi-api/identity
+
+  adl/text-transform:
+    input: adl
+    scope: scope-here
+
+  adl/emitter:
+    input: text-transform
+    scope: scope-here
+    output-artifact: source-file-adl  
+
+scope-here:
+  is-object: false
+  output-artifact:
+    - source-file-adl
+
+output-artifact:
+  - source-file-adl
 ```
 

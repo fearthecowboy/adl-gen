@@ -15,7 +15,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.3.1",
+  "rushVersion": "5.23.0",
   /**
    * The next field selects which package manager should be installed and determines its version.
    * Rush installs its own local copy of the package manager to ensure that your build process
@@ -49,7 +49,7 @@
    * Specify a SemVer range to ensure developers use a NodeJS version that is appropriate
    * for your repo.
    */
-  "nodeSupportedVersionRange": ">=8.9.4 <11.0.0",
+  "nodeSupportedVersionRange": ">=8.9.4 <14.0.0",
   "ensureConsistentVersions": true,
   "projectFolderMinDepth": 2,
   "projectFolderMaxDepth": 3,
@@ -95,98 +95,7 @@
   "telemetryEnabled": false,
   "projects": [
     {
-      "packageName": "@microsoft.azure/tasks",
-      "projectFolder": "perks/libraries/tasks",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/async-io",
-      "projectFolder": "perks/libraries/async-io",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/eventing",
-      "projectFolder": "perks/libraries/eventing",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/extension",
-      "projectFolder": "perks/libraries/extension",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/datastore",
-      "projectFolder": "perks/libraries/datastore",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/linq",
-      "projectFolder": "perks/libraries/linq",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/openapi",
-      "projectFolder": "perks/libraries/openapi",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/uri",
-      "projectFolder": "perks/libraries/uri",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/oai2-to-oai3",
-      "projectFolder": "perks/libraries/oai2-to-oai3",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/autorest-extension-base",
-      "projectFolder": "perks/libraries/autorest-extension-base",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/autorest.codemodel-v3",
-      "projectFolder": "perks/libraries/codemodel-v3",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/codegen",
-      "projectFolder": "perks/libraries/codegen",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/codegen-csharp",
-      "projectFolder": "perks/libraries/codegen-csharp",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/object-comparison",
-      "projectFolder": "perks/libraries/object-comparison",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    {
-      "packageName": "@microsoft.azure/deduplication",
-      "projectFolder": "perks/libraries/deduplication",
-      "reviewCategory": "production",
-      "shouldPublish": false
-    },
-    /* --- project packages --- */
-    {
-      "packageName": "@microsoft.azure/autorest.adl",
+      "packageName": "@autorest/adl",
       "projectFolder": "extensions/adl",
       "reviewCategory": "production",
       "shouldPublish": true
